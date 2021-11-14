@@ -8,7 +8,7 @@ require('dotenv').config();
 
 
 const app = express()
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 7000;
 
 
 // middleware
@@ -82,6 +82,16 @@ async function run() {
     res.send(result);
   })
 
+  
+
+//    //get order by email
+//    app.get('/mybooking', async (req, res) => {
+//     const email = req.query.email;
+//     console.log('database hitted');
+//     const query = { "email": email };
+//     const result = await bookingCollection.find(query).toArray();
+//     res.json(result);
+// })
 
 
   // Delete API
